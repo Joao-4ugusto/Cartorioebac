@@ -138,6 +138,7 @@ int main ()
 	    printf("\t1 - Registrar nomes \n");
      	printf("\t2 - Consultar nomes \n");
     	printf("\t3 - Deletar nomes \n\n" );
+    	printf("\t4 - Sair do sistema\n\n");
     	printf("Opção: ");//Fim do menu
 	
 	    scanf("%d", &opcao);//armazanamento do usuuário
@@ -145,24 +146,29 @@ int main ()
       	system("cls");
       	
       	 
-      	 switch(opcao)
+      	    switch(opcao)
       	 {
-      	 	case 1: 
-		    registro();
-	        break;
+      	 	    case 1: 
+		        registro();
+	            break;
 	        
-			case 2: 
-      	 	consulta();
-	     	break;
+		    	case 2: 
+      	    	consulta();
+	     	    break;
 	     	
-	     	case 3:
-      	    deletar();
-		    break;
+	         	case 3:
+      	        deletar();
+		        break;
 		    
-		    default:
-		    printf("Essa opção não está disponível!\n");
-	    	system("pause");
-	    	break;
+		        case 4:
+		        printf("Obrigado por utilizar o nosso sistema!\n");
+		        return 0;
+		        break;
+		        
+		        default:
+		        printf("Essa opção não está disponível!\n");
+	        	system("pause");
+	        	break;
 		 }
       	 
       	 
